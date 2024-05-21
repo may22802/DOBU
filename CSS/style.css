@@ -1,0 +1,109 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: logoFont;
+    src: url(../fonts/OrganicalPersonalUseBoldItalic-2O6xe.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #5d5d5a66;
+    /* height: 5000px; */
+}
+
+.logo-font{
+    font-family: logoFont;
+}
+
+.bg-nav{
+    background-color: #5d5d5a;
+}
+
+.text-nav{
+    color: #ffcdab;
+}
+
+.text-nav:hover{
+    color: #ffa45c;
+}
+
+.text-nav:active{
+    color: #ffa45c;
+}
+
+.btn-nav{
+    background-color: #ffcdab;
+    border: 1px solid #ffcdab;
+    color: #5d5d5a;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.btn-nav:hover{
+    background-color: #ffa45c;
+    border: 1px solid #ffa45c;
+    color: #fff4e3;
+}
+
+.dropdown-item:hover{
+    background-color: #5d5d5a;
+    color: #ffa45c;
+}
+
+.text-color1{
+    color: #5d5d5a;
+}
+
+.bg-color1{
+    background-color: #5d5d5a;
+}
+
+.text-color2{
+    color: #ffa45c;
+}
+
+.program-card1{
+    position: relative;
+    top: 55px;
+}
+
+.program-card2{
+    position: relative;
+    top: 90px;
+}
+
+.program-card3{
+    position: relative;
+    top: 20px;    
+}
+
+.pricing-section-card{
+    padding: 20px 40px;
+    text-align: center;
+    border: 5px solid #ffcdab;
+    color: #5d5d5a;
+    border-radius: 4px;
+}
+
+.indicator{
+    background-color: #fff4e3 !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+
+
+.img-facilities{
+    height: 500px; 
+    object-fit: contain; 
+    object-position: top;
+}

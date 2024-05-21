@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar bg-nav sticky-top px-3">
+        <div class="container-fluid position-relative">
+            <a href="index.html"
+                class="navbar-brand position-absolute start-50 logo-font fs-1 d-none d-lg-inline text-nav">DOBU</a>
+            <a href="index.html" class="navbar-brand logo-font fs-1 d-inline d-lg-none text-nav me-0">DOBU</a>
+            <!-- from md to lg screen -->
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="index.html" class="nav-link text-nav">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="about.html" class="nav-link text-nav">About</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="#" class="nav-link text-nav">Membership</a>
+                </li>
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Programs
+                    </a>
+                    <ul class="dropdown-menu position-absolute top-100 border-0 bg-nav">
+                        <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="#" class="btn-nav">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link text-nav"><i class="bi bi-person-circle fs-2"></i></a>
+                </li>
+            </ul>
+
+            <!-- from sm to md screen -->
+            <a class="d-md-none" data-bs-toggle="offcanvas" href="#nav-offcanvas" role="button"
+                aria-controls="nav-offcanvas">
+                <span class="fs-1 text-dark"><i class="bi bi-list text-nav"></i></span>
+            </a>
+            <!-- offcanvas for nav  -->
+            <div class="offcanvas offcanvas-start bg-nav" tabindex="-1" id="nav-offcanvas"
+                aria-labelledby="nav-offcanvs-label" style="width: 280px;">
+                <!-- header  -->
+                <div class="offcanvas-header bg-nav">
+                    <p class="offcanvas-title logo-font fs-2 text-nav me-auto" id="nav-offcanvas-label">
+                        DOBU
+                    </p>
+                    <a type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="bi bi-x-lg text-nav fs-5"></i></a>
+                </div>
+                <!-- body  -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item mb-3">
+                            <a href="index.html" class="nav-link text-nav active-offcanvas">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="about.html" class="nav-link text-nav">About</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Membership</a>
+                        </li>
+                        <li class="nav-item dropdown mb-3">
+                            <a class="nav-link text-nav dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-nav">
+                                <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Sign-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- footer section  -->
+    <section class="mt-5 bg-color1 pt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-around align-items-end mb-3">
+                <div class="col-3">
+                    <p class="logo-font h1 text-nav">DOBU</p>
+                    <p class="w-75 text-nav"> <span class="me-3"><i class="bi bi-pin-map-fill"></i></span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.</p>
+                    <p class=" text-nav"><span class="me-3"><i class="bi bi-envelope-fill"></i></span>example123@gmail.com</p>
+                    <ul class="list-unstyled d-flex justify-content-between w-50">
+                        <li><i class="bi bi-facebook h5 text-nav"></i></li>
+                        <li><i class="bi bi-instagram h5 text-nav"></i></li>
+                        <li><i class="bi bi-twitter-x h5 text-nav"></i></li>
+                        <li><i class="bi bi-linkedin h5 text-nav"></i></li>
+                    </ul>
+                </div> 
+                <div class="col-2">
+                    <ul class="list-unstyled ">
+                        <li class="h5 text-nav">Menu</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">home</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">about</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">membership</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">martial art classes</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">fitness training</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">slef-defence</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">private classes</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-unstyled">
+                        <li class="h5 text-nav">Quick Links</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">sign in</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">contact us</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-unstyled">
+                        <li class="h5 text-nav">Operational</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">Weekdays: 6:00-21:00</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">Weekends: 8:00-17:00</a></li>
+                        <li class="h5 text-nav">Call us</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">+959123456789</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position-relative">
+                <p class="text-center text-color2 mb-0 pb-2">CopyRights @ DOBU All Rights Reserved.</p>
+                <a href="#" class="position-absolute end-0 bottom-0 me-5 mb-2"><span><i class="bi bi-arrow-up-circle-fill text-color2 h2"></i></span></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

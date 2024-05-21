@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar bg-nav sticky-top px-3">
+        <div class="container-fluid position-relative">
+            <a href="index.html"
+                class="navbar-brand position-absolute start-50 logo-font fs-1 d-none d-lg-inline text-nav">DOBU</a>
+            <a href="index.html" class="navbar-brand logo-font fs-1 d-inline d-lg-none text-nav me-0">DOBU</a>
+            <!-- from md to lg screen -->
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="index.html" class="nav-link text-nav">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="about.html" class="nav-link text-nav">About</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="#" class="nav-link text-nav">Membership</a>
+                </li>
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Programs
+                    </a>
+                    <ul class="dropdown-menu position-absolute top-100 border-0 bg-nav">
+                        <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="#" class="btn-nav">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link text-nav"><i class="bi bi-person-circle fs-2"></i></a>
+                </li>
+            </ul>
+
+            <!-- from sm to md screen -->
+            <a class="d-md-none" data-bs-toggle="offcanvas" href="#nav-offcanvas" role="button"
+                aria-controls="nav-offcanvas">
+                <span class="fs-1 text-dark"><i class="bi bi-list text-nav"></i></span>
+            </a>
+            <!-- offcanvas for nav  -->
+            <div class="offcanvas offcanvas-start bg-nav" tabindex="-1" id="nav-offcanvas"
+                aria-labelledby="nav-offcanvs-label" style="width: 280px;">
+                <!-- header  -->
+                <div class="offcanvas-header bg-nav">
+                    <p class="offcanvas-title logo-font fs-2 text-nav me-auto" id="nav-offcanvas-label">
+                        DOBU
+                    </p>
+                    <a type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="bi bi-x-lg text-nav fs-5"></i></a>
+                </div>
+                <!-- body  -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item mb-3">
+                            <a href="index.html" class="nav-link text-nav active-offcanvas">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="about.html" class="nav-link text-nav">About</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Membership</a>
+                        </li>
+                        <li class="nav-item dropdown mb-3">
+                            <a class="nav-link text-nav dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-nav">
+                                <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Sign-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="my-5">
+        <div class=" container-fluid container-lg">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-6">
+                    <img src="./img/hero.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-6">
+                    <p class="h2 text-color1">Welcome to DOBU Martail Art Gym!</p>
+                    <p class="text-color1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic et eum dolore
+                        nostrum blanditiis nisi enim mollitia dignissimos quasi quod. Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Unde odit ducimus vitae cupiditate? Velit magni omnis, dicta
+                        molestias quidem deleniti assumenda corrupti, aliquid pariatur debitis voluptates inventore
+                        placeat quis id.</p>
+                    <div class="text-color1 d-flex align-items-center">
+                        <a href="#" class="text-color1 h5 me-1">Join us now</a>
+                        <a href="#" class="text-color1 h5 me-1"><span><i
+                                    class="bi bi-arrow-right-circle-fill"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- program sections -->
+    <section>
+        <div class="container-fluid container-lg my-5">
+            <p class="h3 text-color1">Different Programs For You</p>
+            <div class="row">
+                <div class="col-3 program-card1">
+                    <img src="./img/martialartclasses.jpg" class="img-fluid mb-2" alt="">
+                    <div class="text-color1 d-flex align-items-center justify-content-between">
+                        <a href="#" class="text-color1 h5">Martial art classes</a>
+                        <a href="#" class="text-color1"><span><i
+                                    class="bi bi-arrow-down-right-circle-fill h4"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-3 program-card2">
+                    <img src="./img/fitness.jpg" class="img-fluid mb-2" alt="">
+                    <div class="text-color1 d-flex align-items-center justify-content-between">
+                        <a href="#" class="text-color1 h5">Fitness training</a>
+                        <a href="#" class="text-color1"><span><i
+                                    class="bi bi-arrow-right-circle-fill h4"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-3 program-card1">
+                    <img src="./img/self-defense.jpg" class="img-fluid mb-2" alt="">
+                    <div class="text-color1 d-flex align-items-center justify-content-between">
+                        <a href="#" class="text-color1 h5">Self-defence</a>
+                        <a href="#" class="text-color1"><span><i
+                                    class="bi bi-arrow-down-right-circle-fill h4"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-3 program-card3">
+                    <img src="./img/privateclass.jpg" class="img-fluid mb-2" alt="">
+                    <div class="text-color1 d-flex align-items-center justify-content-between">
+                        <a href="#" class="text-color1 h5">Private classes</a>
+                        <a href="#" class="text-color1 "><span><i
+                                    class="bi bi-arrow-up-right-circle-fill h4"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- some coaches section  -->
+    <section class="" style="margin-top: 150px;">
+        <div class="container-fluid container-lg">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-5">
+                            <img src="./img/coachsection1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-7">
+                            <img src="./img/coachsection2.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ps-5">
+                    <p class="h4 text-color1">Get trainned by amazing Coaches</p>
+                    <p class="text-color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cum soluta
+                        est delectus nisi magnam quos expedita. Ea quod repudiandae, blanditiis harum sunt nulla
+                        molestias sapiente praesentium minima quis laudantium?</p>
+                    <button class="btn-nav d-flex align-items-center">Explore more <span class="ms-2"><i
+                                class="bi bi-arrow-right-circle-fill h5"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership section  -->
+    <section class="my-5">
+        <div class="container-fluid container-lg">
+            <p class="h5 text-color1 text-end">Membership Plan</p>
+            <div class="row justify-content-between mb-4">
+                <div class="col">
+                    <a href="#" class="btn-nav d-inline-flex align-items-center">Private class available<span
+                            class="ms-3"><i class="bi bi-arrow-down-circle-fill h4"></i></span></a>
+                </div>
+                <div class="col">
+                    <p class="h1 text-color2 text-end">Join Us Today</p>
+                </div>
+            </div>
+            <!-- plans  -->
+            <div class="row mb-4">
+                <div class="col-3">
+                    <div class="pricing-section-card">
+                        <p class="h5">Basic</p>
+                        <p class="h5">$25/Per Month</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="pricing-section-card">
+                        <p class="h5">Intermediate</p>
+                        <p class="h5">$35/Per Month</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="pricing-section-card">
+                        <p class="h5">Advanced</p>
+                        <p class="h5">$45/Per Month</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="pricing-section-card">
+                        <p class="h5">Elite</p>
+                        <p class="h5">$60/Per Month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between mb-5">
+                <div class="col">
+                    <a href="" class="text-color1 h5">Junior Membership Available</a>
+                </div>
+                <div class="col text-end">
+                    <a class="btn-nav d-inline-flex align-items-center" href="#">more details<span class="ms-3"><i
+                                class="bi bi-arrow-right-circle-fill h4"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- facilities section  -->
+    <section class="my-5">
+        <div class="container-fluid container-lg text-color1">
+            <p class="h3 text-center my-4">Our Facilities</p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active indicator" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/changingroom.jpg" class="d-block w-100 img-fluid img-facilities">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Changing Room</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/fullEquipGym.jpg" class="d-block w-100 img-fluid img-facilities">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fully Equipted Gym</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/matted.jpg" class="d-block w-100 img-fluid img-facilities">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>All matted martial art area</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/showerroom.jpg" class="d-block w-100 img-fluid img-facilities">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>shower Room</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/steamroom.jpg" class="d-block w-100 img-fluid img-facilities">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Steam Room</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/suna.jpg" class="d-block w-100 img-fluid img-facilities">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Suna</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section  -->
+    <section class="my-5">
+        <div class="container-fluid container-lg">
+            <p class="h3 text-center text-color1 my-4">Feebacks From Members</p>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center">
+                            <div>
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                                style="width: 150px;" />
+                            </div>
+                            <h5 class="mb-3">Maria Kate</h5>
+                            <p>Photographer</p>
+                            <p class="text-muted w-50 text-center">
+                                <i class="fas fa-quote-left pe-2"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                doloremque.
+                            </p>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <div>
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                                style="width: 150px;" />
+                            </div>
+                            <h5 class="mb-3">Maria Kate</h5>
+                            <p>Photographer</p>
+                            <p class="text-muted w-50 text-center">
+                                <i class="fas fa-quote-left pe-2"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                doloremque.
+                            </p>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center">
+                            <div>
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                                style="width: 150px;" />
+                            </div>
+                            <h5 class="mb-3">Maria Kate</h5>
+                            <p>Photographer</p>
+                            <p class="text-muted w-50 text-center">
+                                <i class="fas fa-quote-left pe-2"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+                                nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+                                fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit
+                                doloremque.
+                            </p>
+                        </div>
+                        <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="" aria-hidden="true"><i class="bi bi-arrow-left h3 text-color1"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="" aria-hidden="true"><i class="bi bi-arrow-right h3 text-color1"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <section class="mt-5 bg-color1 pt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-around align-items-end mb-3">
+                <div class="col-3">
+                    <p class="logo-font h1 text-nav">DOBU</p>
+                    <p class="w-75 text-nav"> <span class="me-3"><i class="bi bi-pin-map-fill"></i></span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.</p>
+                    <p class=" text-nav"><span class="me-3"><i class="bi bi-envelope-fill"></i></span>example123@gmail.com</p>
+                    <ul class="list-unstyled d-flex justify-content-between w-50">
+                        <li><i class="bi bi-facebook h5 text-nav"></i></li>
+                        <li><i class="bi bi-instagram h5 text-nav"></i></li>
+                        <li><i class="bi bi-twitter-x h5 text-nav"></i></li>
+                        <li><i class="bi bi-linkedin h5 text-nav"></i></li>
+                    </ul>
+                </div> 
+                <div class="col-2">
+                    <ul class="list-unstyled ">
+                        <li class="h5 text-nav">Menu</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">home</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">about</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">membership</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">martial art classes</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">fitness training</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">slef-defence</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">private classes</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-unstyled">
+                        <li class="h5 text-nav">Quick Links</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">sign in</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">contact us</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="list-unstyled">
+                        <li class="h5 text-nav">Operational</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">Weekdays: 6:00-21:00</a></li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">Weekends: 8:00-17:00</a></li>
+                        <li class="h5 text-nav">Call us</li>
+                        <li class=""><a class="text-decoration-none text-nav" href="#">+959123456789</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position-relative">
+                <p class="text-center text-color2 mb-0 pb-2">CopyRights @ DOBU All Rights Reserved.</p>
+                <a href="#" class="position-absolute end-0 bottom-0 me-5 mb-2"><span><i class="bi bi-arrow-up-circle-fill text-color2 h2"></i></span></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
