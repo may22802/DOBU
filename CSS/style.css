@@ -63,12 +63,24 @@ body{
     color: #5d5d5a;
 }
 
+.border-color1{
+    border: 3px solid #5d5d5a;
+}
+
 .bg-color1{
     background-color: #5d5d5a;
 }
 
 .text-color2{
     color: #ffa45c;
+}
+
+.text-color3{
+    color: #ffcdab;
+}
+
+.text-color4{
+    color: #fff4e3;
 }
 
 .program-card1{
@@ -106,4 +118,30 @@ body{
     height: 500px; 
     object-fit: contain; 
     object-position: top;
+}
+
+.member{
+    background-color: #5d5d5a5f;
+}
+
+.member-head{
+    position: relative;
+    top: 50px;
+}
+
+.member-assistant{
+    position: relative;
+    top: 50px;
+}
+
+.member-fitness{
+    position: relative;
+    top: 80px;
+}
+
+.member-role{
+    background-color: #5d5d5a;
+    color: #fff4e3;
+    border: 2px solid #5d5d5a;
+    padding: 5px;
 }
