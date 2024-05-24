@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial art class Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar bg-nav sticky-top px-3">
+        <div class="container-fluid position-relative">
+            <a href="index.html"
+                class="navbar-brand position-absolute start-50 logo-font fs-1 d-none d-lg-inline text-nav">DOBU</a>
+            <a href="index.html" class="navbar-brand logo-font fs-1 d-inline d-lg-none text-nav me-0">DOBU</a>
+            <!-- from md to lg screen -->
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="index.html" class="nav-link text-nav">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="about.html" class="nav-link text-nav">About</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="#" class="nav-link text-nav">Membership</a>
+                </li>
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Programs
+                    </a>
+                    <ul class="dropdown-menu position-absolute top-100 border-0 bg-nav">
+                        <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="#" class="btn-nav">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link text-nav"><i class="bi bi-person-circle fs-2"></i></a>
+                </li>
+            </ul>
+
+            <!-- from sm to md screen -->
+            <a class="d-md-none" data-bs-toggle="offcanvas" href="#nav-offcanvas" role="button"
+                aria-controls="nav-offcanvas">
+                <span class="fs-1 text-dark"><i class="bi bi-list text-nav"></i></span>
+            </a>
+            <!-- offcanvas for nav  -->
+            <div class="offcanvas offcanvas-start bg-nav" tabindex="-1" id="nav-offcanvas"
+                aria-labelledby="nav-offcanvs-label" style="width: 280px;">
+                <!-- header  -->
+                <div class="offcanvas-header bg-nav">
+                    <p class="offcanvas-title logo-font fs-2 text-nav me-auto" id="nav-offcanvas-label">
+                        DOBU
+                    </p>
+                    <a type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="bi bi-x-lg text-nav fs-5"></i></a>
+                </div>
+                <!-- body  -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item mb-3">
+                            <a href="index.html" class="nav-link text-nav active-offcanvas">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="about.html" class="nav-link text-nav">About</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Membership</a>
+                        </li>
+                        <li class="nav-item dropdown mb-3">
+                            <a class="nav-link text-nav dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-nav">
+                                <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Sign-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- breadcrumb  -->
+    <div class="container-lg container-fluid mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="text-color1">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-color1">Program</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Martial Art Classes</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Offer Section  -->
+    <section class="mb-5">
+        <div class="container-fluid container-lg mt-4">
+            <p class="h3 text-color1 text-center mb-3">4 Different Martial Arts Teached By DOBU</p>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active indicator" aria-current="true" aria-label="Slide 1"></button>
+                            <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button class="indicator" type="button" data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/judo.jpg" class="d-block w-100 img-fluid img-carousel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Judo</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/jiuJitsu.jpg" class="d-block w-100 img-fluid img-carousel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Jiu-Jitsu</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/karate.jpg" class="d-block w-100 img-fluid img-carousel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Karate</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/muaythai.jpg" class="d-block w-100 img-fluid img-carousel">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Muay Thai</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- get trained by section  -->
+    <section class="mb-5">
+        <div class="container-fluid container-lg">
+            <p class="text-color1 text-center h3 mb-4">Get Trained By these Amazing Instructors</p>
+            <div class="row justify-content-evenly">
+                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center"
+                    style="width: 24%;">
+                    <img class="rounded-circle shadow-1-strong mb-3"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                        style="width: 130px;" />
+                    <p class="h5 mb-3">Sarah Nova</p>
+                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
+                    <ul class="list-unstyled text-center">
+                        <li>5th Dan Karate</li>
+                    </ul>
+                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
+                        <li><i class="bi bi-facebook h5"></i></li>
+                        <li><i class="bi bi-instagram h5"></i></li>
+                        <li><i class="bi bi-linkedin h5"></i></li>
+                    </ul>
+                </div>
+                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1"
+                    style="width: 25%;">
+                    <img class="rounded-circle shadow-1-strong mb-3"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                        style="width: 130px;" />
+                    <p class="h5 mb-3">Mauricio Gomez</p>
+                    <p class="member-role d-inline-block shadow rounded-2">Gym owner/Head martial art coach</p>
+                    <ul class="list-unstyled text-center">
+                        <li>Coaches in all martail art</li>
+                        <li>4th Dan BlackBelt Judo</li>
+                        <li>4th Dan BlackBelt Jiu-Jitsu</li>
+                        <li>1st Dan BlackBelt Karate</li>
+                        <li>Accredited Muay Thai Coach</li>
+                    </ul>
+                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
+                        <li><i class="bi bi-facebook h5"></i></li>
+                        <li><i class="bi bi-instagram h5"></i></li>
+                        <li><i class="bi bi-linkedin h5"></i></li>
+                    </ul>
+                </div>
+                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center"
+                    style="width: 24%;">
+                    <img class="rounded-circle shadow-1-strong mb-3"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                        style="width: 130px;" />
+                    <p class="h5 mb-3">Guy Vicotry</p>
+                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
+                    <ul class="list-unstyled text-center">
+                        <li>1st Dan BlackBelt Judo</li>
+                        <li>2nd Dan BlackBelt Jiu-Jitsu</li>
+                    </ul>
+                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
+                        <li><i class="bi bi-facebook h5"></i></li>
+                        <li><i class="bi bi-instagram h5"></i></li>
+                        <li><i class="bi bi-linkedin h5"></i></li>
+                    </ul>
+                </div>
+                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member1 justify-content-center"
+                    style="width: 24%;">
+                    <img class="rounded-circle shadow-1-strong mb-3"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+                        style="width: 130px;" />
+                    <p class="h5 mb-3">Morris Davis</p>
+                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
+                    <ul class="list-unstyled text-center">
+                        <li>Accredited Muay Thai Coach</li>
+                        <li>3rd Dan BlackBelt Karate</li>
+                    </ul>
+                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
+                        <li><i class="bi bi-facebook h5"></i></li>
+                        <li><i class="bi bi-instagram h5"></i></li>
+                        <li><i class="bi bi-linkedin h5"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- join us now section  -->
+    <section>
+        <div class="container-fluid container-lg">
+            <div class="row align-items-center">
+                <div class="col-6 d-flex align-items-end">
+                    <img src="./img/Sessions.jpg" alt="" class="w-50 me-2">
+                    <a href="./img/Sessions.jpg" download class="text-color1 " target="_blank">Download session schedule
+                        here</a>
+                </div>
+                <div class="col-6">
+                    <div class="text-end">
+                        <a href="membership.html" class="text-decoration-none text-color1 ms-auto d-block w-75"
+                            style="font-size: 90px;">Join US Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <section class="bg-color1 pt-5 mt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-start align-items-end">
+                <div class="col-4 ms-5">
+                    <p class="logo-font h1 text-nav">DOBU</p>
+                    <p class="text-nav"> <span class="me-3"><i class="bi bi-pin-map-fill"></i></span>Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.</p>
+                    <p class=" text-nav"><span class="me-3"><i
+                                class="bi bi-envelope-fill"></i></span>example123@gmail.com</p>
+                    <ul class="list-unstyled d-flex justify-content-between w-50">
+                        <li><i class="bi bi-facebook h5 text-nav"></i></li>
+                        <li><i class="bi bi-instagram h5 text-nav"></i></li>
+                        <li><i class="bi bi-twitter-x h5 text-nav"></i></li>
+                        <li><i class="bi bi-linkedin h5 text-nav"></i></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="list-unstyled text-end">
+                        <li class="h5 text-nav">Why Hesitate?</li>
+                        <li class="h5 text-nav">Join Our Programs</li>
+                        <li class=""><a class="text-nav" href="#">martial art classes <span><i
+                                        class="bi bi-arrow-right-circle text-nav"></i></span></a></li>
+                        <li class=""><a class="text-nav" href="#">fitness training <span><i
+                                        class="bi bi-arrow-right-circle text-nav"></i></span></a></li>
+                        <li class=""><a class="text-nav" href="#">slef-defence <span><i
+                                        class="bi bi-arrow-right-circle text-nav"></i></span></a></li>
+                        <li class=""><a class="text-nav" href="#">private classes <span><i
+                                        class="bi bi-arrow-right-circle text-nav"></i></span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-center text-color2 mb-0 pb-2">CopyRights @ DOBU All Rights Reserved.</p>
+                </div>
+            </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
