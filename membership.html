@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar bg-nav sticky-top px-3">
+        <div class="container-fluid position-relative">
+            <a href="index.html"
+                class="navbar-brand position-absolute start-50 logo-font fs-1 d-none d-lg-inline text-nav">DOBU</a>
+            <a href="index.html" class="navbar-brand logo-font fs-1 d-inline d-lg-none text-nav me-0">DOBU</a>
+            <!-- from md to lg screen -->
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="index.html" class="nav-link text-nav">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="about.html" class="nav-link text-nav">About</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="membership.html" class="nav-link text-nav">Membership</a>
+                </li>
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Programs
+                    </a>
+                    <ul class="dropdown-menu position-absolute top-100 border-0 bg-nav">
+                        <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="#" class="btn-nav">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link text-nav"><i class="bi bi-person-circle fs-2"></i></a>
+                </li>
+            </ul>
+
+            <!-- from sm to md screen -->
+            <a class="d-md-none" data-bs-toggle="offcanvas" href="#nav-offcanvas" role="button"
+                aria-controls="nav-offcanvas">
+                <span class="fs-1 text-dark"><i class="bi bi-list text-nav"></i></span>
+            </a>
+            <!-- offcanvas for nav  -->
+            <div class="offcanvas offcanvas-start bg-nav" tabindex="-1" id="nav-offcanvas"
+                aria-labelledby="nav-offcanvs-label" style="width: 280px;">
+                <!-- header  -->
+                <div class="offcanvas-header bg-nav">
+                    <p class="offcanvas-title logo-font fs-2 text-nav me-auto" id="nav-offcanvas-label">
+                        DOBU
+                    </p>
+                    <a type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="bi bi-x-lg text-nav fs-5"></i></a>
+                </div>
+                <!-- body  -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item mb-3">
+                            <a href="index.html" class="nav-link text-nav active-offcanvas">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="about.html" class="nav-link text-nav">About</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Membership</a>
+                        </li>
+                        <li class="nav-item dropdown mb-3">
+                            <a class="nav-link text-nav dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-nav">
+                                <li><a class="dropdown-item text-nav" href="#">Martial art classes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Fitness trainning</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Self-defence</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="#">Private classes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link text-nav">Sign-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- select plan section  -->
+    <section class="my-5">
+        <div class="container-fluid container-lg">
+            <div class="row mb-4">
+                <p class="h4 text-color1 mb-3">Step1: Select plan that matches you</p>
+                <div class="col-3">
+                    <div class="membership-card plan" id="basic" onclick="selectedPlan('basic',25,1)">
+                        <p class="">$25/Per Month</p>
+                        <p class="h4 mb-4">Basic</p>
+                        <ul class="list-unstyled text-start">
+                            <li><span><i class="bi bi-check-lg"></i></span>1 martial art</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>2 sessions per week</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Access to All Facilities</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Personal practice on open mat MON-FRI:
+                                13:00-14:30</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="membership-card plan" id="intermediate" onclick="selectedPlan('intermediate',35,1)">
+                        <p class="">$35/Per Month</p>
+                        <p class="h4 mb-4">Intermediate</p>
+                        <ul class="list-unstyled text-start">
+                            <li><span><i class="bi bi-check-lg"></i></span>1 martial art</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>3 sessions per week</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Access to All Facilities</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Personal practice on open mat MON-FRI:
+                                13:00-14:30</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="membership-popular position-relative plan" id="advance"
+                        onclick="selectedPlan('advance',45,2)">
+                        <span class="popular">Most popular</span>
+                        <p class="">$45/Per Month</p>
+                        <p class="h4 mb-4">Advanced</p>
+                        <ul class="list-unstyled text-start">
+                            <li><span><i class="bi bi-check-lg"></i></span>2 martial art</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>5 sessions per week</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Access to All Facilities</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Personal practice on open mat MON-FRI:
+                                13:00-14:30</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="membership-card plan" id="elite" onclick="selectedPlan('elite',60,4)">
+                        <p class="">$60/Per Month</p>
+                        <p class="h4 mb-4">Elite</p>
+                        <ul class="list-unstyled text-start">
+                            <li><span><i class="bi bi-check-lg"></i></span>Unlimited martial art</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Unlimited sessions per week</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Access to All Facilities</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Personal practice on open mat MON-FRI:
+                                13:00-14:30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="membership-junior position-relative plan" id="junior"
+                        onclick="selectedPlan('junior',25,4)">
+                        <span class="for-kids">For Kids</span>
+                        <p class="">$25/Per Month</p>
+                        <p class="h4 mb-4">Junior</p>
+                        <ul class="list-unstyled text-start">
+                            <li><span><i class="bi bi-check-lg"></i></span>All martial art</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Every Mon-Fri 15:00-17:00</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Access to All Facilities</li>
+                            <li><span><i class="bi bi-check-lg"></i></span>Personal practice on open mat MON-FRI:
+                                13:00-14:30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fill info section  -->
+    <section>
+        <div class="container-fluid container-lg">
+            <div class="row">
+                <p class="h4 text-color1">Step2: Fill the following information</p>
+                <form action="" class="needs-validation" id="myForm" novalidate>
+                    <div class="col-6">
+                        <div class="text-color1 h5 mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            <div class="invalid-feedback">
+                                Please enter the name!
+                            </div>
+                        </div>
+                        <div class="text-color1 h5 mb-3 ">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">
+                                Please enter the eamil!
+                            </div>
+                        </div>
+                        <div class="text-color1 h5 mb-3">
+                            <p>Choose martial art</p>
+                            <div class="d-flex justify-content-start checkbox-container">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="me-5">
+                                        <input class="form-check-input" type="checkbox" value="jiujitsu"
+                                            id="martialart1" checked required onclick="toggleCheckbox()">
+                                        <label class="form-check-label" for="martialart1">
+                                            Jiu-Jitsu
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input class="form-check-input" type="checkbox" value="judo" id="martialart2"
+                                            checked required onclick="toggleCheckbox()">
+                                        <label class="form-check-label" for="martialart2">
+                                            Judo
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="me-5">
+                                        <input class="form-check-input" type="checkbox" value="karate" id="martialart3"
+                                            disabled required onclick="toggleCheckbox()">
+                                        <label class="form-check-label" for="martialart3">
+                                            Karate
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input class="form-check-input" type="checkbox" value="muaythai"
+                                            id="martialart4" disabled required onclick="toggleCheckbox()">
+                                        <label class="form-check-label" for="martialart4">
+                                            Muay Thai
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="h4 text-color1 mt-4">Step3: Confirm Membership</p>
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkout" checked>
+                                    <label class="form-check-label" for="checkout">
+                                        Secure checkout. Fill your payment information
+                                    </label>
+                                </div>
+                                <div class="row justify-content-start">
+                                    <div class="col-4">
+                                        <input type="text" class="form-control" placeholder="first name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter first name!
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control" placeholder="last name" required>
+                                        <div class="invalid-feedback">
+                                            Please enter last name!
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="number" class="form-control" placeholder="Zip/Postal Code"
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please enter code!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <input type="tel" class="form-control" placeholder="KPay Number" required>
+                                    <div class="invalid-feedback">
+                                        Please enter numeber!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <p class="h5 text-color1">Payment Summary</p>
+                                <div class="d-flex justify-content-between w-75">
+                                    <p class="text-color1">Membership plan
+                                    </p>
+                                    <p class="text-color1" id="summary">: $45.00</p>
+                                </div>
+                                <hr class="w-75">
+                                <div class="d-flex justify-content-between w-75">
+                                    <p class="text-color1">Toal
+                                    </p>
+                                    <p class="text-color1" id="total">: $45.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <button type="submit" class="btn-nav">Join Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal fade mt-5" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <p class="text-center text-primary"><span><i class="bi bi-qr-code-scan h3"></i></span></p>
+                        <p class="h4 text-center text-color1">Scan QR Code</p>
+                        <p class="text-center text-color1">Scan this code to make payment</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjy46IY46yV2Shn6WGwgPDZqDdOoA7sM0M1nujlKFsIg&s"
+                            alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section  -->
+    <section class="bg-color1 pt-5" style="margin-top: 50px;">
+        <div class="container-fluid">
+            <div class="row justify-content-start align-items-end">
+                <div class="col-4 ms-5">
+                    <p class="logo-font h1 text-nav">DOBU</p>
+                    <p class="text-nav"> <span class="me-3"><i class="bi bi-pin-map-fill"></i></span>Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.</p>
+                    <p class=" text-nav"><span class="me-3"><i
+                                class="bi bi-envelope-fill"></i></span>example123@gmail.com</p>
+                    <ul class="list-unstyled d-flex justify-content-between w-50">
+                        <li><i class="bi bi-facebook h5 text-nav"></i></li>
+                        <li><i class="bi bi-instagram h5 text-nav"></i></li>
+                        <li><i class="bi bi-twitter-x h5 text-nav"></i></li>
+                        <li><i class="bi bi-linkedin h5 text-nav"></i></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-center text-color2 mb-0 pb-2">CopyRights @ DOBU All Rights Reserved.</p>
+                </div>
+            </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JS/membership.js"></script>
+</body>
+
+</html>
