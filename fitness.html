@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Class Page</title>
+    <title>Fitness Page</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -92,7 +93,8 @@
                                 Programs
                             </a>
                             <ul class="dropdown-menu border-0 bg-nav">
-                                <li><a class="dropdown-item text-nav" href="martialArtClass.html">Martial art classes</a></li>
+                                <li><a class="dropdown-item text-nav" href="martialArtClass.html">Martial art
+                                        classes</a></li>
                                 <li>
                                     <hr class="dropdown-divider text-nav">
                                 </li>
@@ -126,35 +128,161 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html" class="text-color1">Home</a></li>
                 <li class="breadcrumb-item"><a href="#" class="text-color1">Program</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Private Class</li>
+                <li class="breadcrumb-item active" aria-current="page">Fitness</li>
             </ol>
         </nav>
     </div>
 
-    <section class="mt-5 mb-3">
+    <!-- intro-->
+    <section class="my-5">
         <div class="container-fluid container-lg">
-            <div class="row">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <p class="text-color1 h3">Come to a result</p>
+                    <p class="text-color4" style="font-size: 70px;">With us</p>
+                </div>
                 <div class="col-6">
-                    <p class="text-color1" style="font-size: 70px;">DOBU also provide private martial art class for students.</p>
+                    <p class="text-color1 h5">Ready to take the first step</p>
+                    <p class="text-color1 h5 mb-0">towards healthier,Stronger YOU?</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-around">
+
+                <div style="height: 150px; width: 150px;"
+                    class="col-3  svg-after position-relative border-color1 rounded-circle d-flex align-items-center justify-content-center">
+                    <svg fill="#5d5d5a" height="80px" width="80px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 365.473 365.473" xml:space="preserve">
+                        <path d="M4.029,46.205V24.266c0-4.971,4.114-8.705,9.085-8.705h69.915V9c0-4.971,4.029-9,9-9s9,4.029,9,9v6.561h140V9
+	c0-4.971,4.029-9,9-9s9,4.029,9,9v6.561h70.27c4.971,0,8.73,3.734,8.73,8.705v21.939c0,4.971-4.029,9-9,9s-9-4.029-9-9V33.561h-61
+	v5.967c0,4.971-4.029,9-9,9s-9-4.029-9-9v-5.967h-140v5.967c0,4.971-4.029,9-9,9s-9-4.029-9-9v-5.967h-61v12.644
+	c0,4.971-4.029,9-9,9S4.029,51.176,4.029,46.205z M361.444,284.249c0,44.789-36.439,81.224-81.228,81.224
+	c-44.79,0-81.228-36.445-81.228-81.234c0-34.795,21.994-64.565,52.807-76.112c-1.168-1.519-1.864-3.448-1.864-5.512
+	c0-4.971,4.029-9.054,9-9.054h42.57c4.971,0,9,4.083,9,9.054c0,2.064-0.695,4.02-1.864,5.539c7.485,2.805,14.451,6.684,20.707,11.45
+	l4.445-4.445c3.515-3.515,9.214-3.513,12.728,0c3.515,3.515,3.514,9.213,0,12.728l-4.136,4.135
+	C354.273,246.154,361.444,264.377,361.444,284.249z M343.444,284.252c0-34.864-28.364-63.229-63.228-63.229
+	c-34.864,0-63.228,28.364-63.228,63.229c0,34.864,28.364,63.228,63.228,63.228C315.08,347.479,343.444,319.116,343.444,284.252z
+	 M292.394,262.017l-3.365,3.272v-13.921c0-4.971-4.029-9-9-9s-9,4.029-9,9v35.65c0,1.225,0.338,2.392,0.781,3.456
+	c0.439,1.058,1.135,2.048,1.995,2.908c0.881,0.881,1.923,1.542,3.01,1.98c0.002,0.001,0.015,0.001,0.017,0.002
+	c0.004,0.002,0.014-0.222,0.019-0.22c0.949,0.382,1.984,0.417,3.061,0.417c0.006,0,0.011,0,0.019,0c0.095,0,0.19,0.004,0.286,0.004
+	s0.19-0.004,0.285-0.004c0.006,0,0.013,0,0.019,0c1.096,0,2.142-0.043,3.104-0.437c1.076-0.439,2.084-0.983,2.957-1.856
+	l18.636-18.58c3.515-3.515,3.467-9.185-0.047-12.7C301.654,258.473,295.909,258.502,292.394,262.017z M196.534,231.561
+	c0,4.971-4.029,9-9,9h-7.505v66.138c0,4.971-3.941,8.966-8.912,8.966c-0.303,0-0.514-0.05-0.809-0.078
+	c-0.295,0.029-0.595-0.025-0.897-0.025H13.114c-4.971,0-9.085-3.892-9.085-8.862V80.369v-0.002c0-4.971,4.114-8.806,9.085-8.806
+	h316.185c4.971,0,8.73,3.835,8.73,8.806v97.588c0,4.971-4.029,9-9,9s-9-4.029-9-9v-13.394h-61v0.769c0,4.971-4.029,9-9,9
+	s-9-4.029-9-9v-0.769h-61v58h7.505C192.505,222.561,196.534,226.59,196.534,231.561z M83.029,240.561h-61v57h61V240.561z
+	 M83.029,164.561h-61v58h61V164.561z M162.029,240.561h-61v57h61V240.561z M162.029,164.561h-61v58h61V164.561z M180.029,109.228
+	v37.333h61v-37.333c0-4.971,4.029-9,9-9s9,4.029,9,9v37.333h61v-57h-298v57h61v-37.333c0-4.971,4.029-9,9-9s9,4.029,9,9v37.333h61
+	v-37.333c0-4.971,4.029-9,9-9S180.029,104.257,180.029,109.228z" />
+                    </svg>
+                </div>
+                <div style="height: 150px; width: 150px;"
+                    class="col-3 svg-after position-relative border-color1 rounded-circle d-flex align-items-center justify-content-center">
+                    <svg fill="#5d5d5a" height="80px" width="80px" version="1.1" id="Icons"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 32 32" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-width: 2;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-miterlimit: 10;
+                            }
+                        </style>
+                        <path
+                            d="M16,23c-1.7,0-3.3-0.4-4.7-1.1l0.7,2.2V29c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-4.8l0.7-2.2C19.3,22.6,17.7,23,16,23z" />
+                        <path d="M27.9,14.2c0.7-0.9,1.1-2,1.1-3.2c0-2.8-2.2-5-5-5c-0.3,0-0.7,0-1,0.1C21.6,3.6,18.9,2,16,2s-5.6,1.6-7,4.1C8.7,6,8.3,6,8,6
+	c-2.8,0-5,2.2-5,5c0,1.2,0.4,2.3,1.1,3.2c-1.3,1-2.1,2.6-2.1,4.3c0,3,2.5,5.5,5.5,5.5c0.5,0,1.1-0.1,1.6-0.2
+	c0.3,0.3,0.6,0.6,0.9,0.9v-0.2l-0.6-1.9c-0.3-0.8,0-1.6,0.6-2.1c0.6-0.5,1.5-0.7,2.2-0.3c2.4,1.2,5.4,1.2,7.8,0
+	c0.7-0.3,1.6-0.2,2.2,0.3c0.6,0.5,0.8,1.4,0.6,2.1L22,24.5v0.2c0.3-0.3,0.6-0.6,0.9-0.9c0.5,0.2,1.1,0.2,1.6,0.2
+	c3,0,5.5-2.5,5.5-5.5C30,16.8,29.2,15.2,27.9,14.2z" />
+                    </svg>
+                </div>
+                <div style="height: 150px; width: 150px;"
+                    class="col-3 svg-after position-relative border-color1 rounded-circle d-flex align-items-center justify-content-center">
+                    <svg fill="#5d5d5a" height="80px" width="80px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512 512" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <path d="M272.168,118.568c-19.317,0-35.032,15.716-35.032,35.032c0,19.316,15.715,35.032,35.032,35.032
+				c19.317,0,35.032-15.716,35.032-35.032C307.2,134.284,291.485,118.568,272.168,118.568z M272.168,172.463
+				c-10.401,0-18.863-8.463-18.863-18.863c0-10.401,8.463-18.863,18.863-18.863c10.401,0,18.863,8.463,18.863,18.863
+				C291.032,164.001,282.569,172.463,272.168,172.463z" />
+                                    <path
+                                        d="M125.693,35.569c13.489-12.511,31.055-19.401,49.465-19.401h43.116c40.119,0,72.758,32.639,72.758,72.758
+				c0,4.902-0.489,9.801-1.456,14.561c-0.887,4.375,1.94,8.643,6.315,9.53c0.542,0.11,1.083,0.163,1.616,0.163
+				c3.765,0,7.137-2.645,7.915-6.478c1.18-5.815,1.779-11.795,1.779-17.776C307.2,39.892,267.307,0,218.274,0h-43.116
+				c-22.5,0-43.972,8.422-60.46,23.714c-3.272,3.036-3.465,8.152-0.429,11.425C117.304,38.413,122.419,38.606,125.693,35.569z" />
+                                    <path d="M217.381,55.312c2.242-1.5,3.587-4.021,3.587-6.717s-1.345-5.217-3.587-6.717c-9.323-6.241-20.195-9.54-31.444-9.54
+				c-31.203,0-56.589,25.385-56.589,56.589s25.387,56.589,56.589,56.589c11.249,0,22.122-3.298,31.444-9.539
+				c2.242-1.5,3.587-4.021,3.587-6.717c0-2.698-1.345-5.217-3.586-6.719c-11.254-7.533-17.972-20.099-17.972-33.614
+				S206.128,62.846,217.381,55.312z M198.338,127.408c-3.975,1.281-8.15,1.939-12.401,1.939c-22.289,0-40.421-18.132-40.421-40.421
+				s18.132-40.421,40.421-40.421c4.251,0,8.426,0.659,12.401,1.939c-9.609,10.351-15.096,24.028-15.096,38.482
+				S188.729,117.057,198.338,127.408z" />
+                                    <path d="M512,288.337v-10.779c0-28.231-22.969-51.2-51.2-51.2h-78.785c-3.886-24.405-25.079-43.116-50.562-43.116
+				c-28.231,0-51.2,22.969-51.2,51.2c0,8.554,2.144,16.874,6.113,24.253H29.642C13.298,258.695,0,271.992,0,288.337v75.453
+				c0,16.345,13.298,29.642,29.642,29.642h291.032c16.344,0,29.642-13.297,29.642-29.642v-24.253h67.368
+				c4.466,0,8.084-3.62,8.084-8.084s-3.619-8.084-8.084-8.084h-67.368v-35.032c0-12.045-7.22-22.434-17.561-27.067
+				c5.94-11.333,17.786-18.744,31.035-18.744h97.01c19.317,0,35.032,15.716,35.032,35.032v10.779
+				c0,19.316-15.715,35.032-35.032,35.032h-10.779c-4.466,0-8.084,3.62-8.084,8.084s3.618,8.084,8.084,8.084h32.337
+				c7.43,0,13.474,6.044,13.474,13.474v13.474H385.347c-4.466,0-8.084,3.62-8.084,8.084s3.618,8.084,8.084,8.084h110.484v35.032
+				c0,7.43-6.044,13.474-13.474,13.474h-64.674c-4.466,0-8.084,3.62-8.084,8.084c0,4.465,3.619,8.084,8.084,8.084h2.695v35.032
+				c0,7.43-6.044,13.474-13.474,13.474h-21.558c-7.43,0-13.474-6.044-13.474-13.474v-35.032h13.474c4.466,0,8.084-3.62,8.084-8.084
+				c0-4.465-3.618-8.084-8.084-8.084H158.989c-4.466,0-8.084,3.62-8.084,8.084c0,4.465,3.618,8.084,8.084,8.084h2.695v35.032
+				c0,7.43-6.044,13.474-13.474,13.474h-21.558c-7.43,0-13.474-6.044-13.474-13.474v-35.032h13.474c4.466,0,8.084-3.62,8.084-8.084
+				c0-4.465-3.619-8.084-8.084-8.084H51.2c-7.43,0-13.474-6.044-13.474-13.474c0-4.465-3.618-8.084-8.084-8.084
+				c-4.466,0-8.084,3.62-8.084,8.084c0,16.345,13.298,29.642,29.642,29.642h45.811v35.032c0,4.848,1.171,9.429,3.243,13.474H8.084
+				c-4.466,0-8.084,3.62-8.084,8.084C0,508.38,3.619,512,8.084,512h291.032c4.466,0,8.084-3.62,8.084-8.084
+				c0-4.465-3.618-8.084-8.084-8.084H174.609c2.073-4.044,3.243-8.625,3.243-13.474v-35.032h177.853v35.032
+				c0,4.848,1.171,9.429,3.243,13.474h-27.496c-4.466,0-8.084,3.62-8.084,8.084c0,4.465,3.619,8.084,8.084,8.084h172.463
+				c4.466,0,8.084-3.62,8.084-8.084c0-4.465-3.618-8.084-8.084-8.084h-70.612c2.073-4.044,3.243-8.625,3.243-13.474v-35.032h45.811
+				c16.344,0,29.642-13.297,29.642-29.642V353.01c0-11.767-6.892-21.955-16.851-26.737C505.493,316.899,512,303.363,512,288.337z
+				 M334.147,288.337v75.453c0,7.43-6.044,13.474-13.474,13.474h-67.368v-78.147c0-4.465-3.618-8.084-8.084-8.084
+				c-4.466,0-8.084,3.62-8.084,8.084v78.147H29.642c-7.43,0-13.474-6.044-13.474-13.474v-75.453c0-7.43,6.044-13.474,13.474-13.474
+				h273.126c0.11,0.002,0.219,0.002,0.329,0h17.577C328.104,274.863,334.147,280.907,334.147,288.337z M363.789,226.358
+				c-21.223,0-39.984,13.017-47.616,32.337h-9.999c-6.23-6.499-9.754-15.184-9.754-24.253c0-19.316,15.715-35.032,35.032-35.032
+				c16.535,0,30.431,11.515,34.091,26.947H363.789z" />
+                                    <path d="M175.158,177.853h43.116c4.466,0,8.084-3.62,8.084-8.084s-3.618-8.084-8.084-8.084h-43.116
+				c-40.119,0-72.758-32.639-72.758-72.758c0-11.83,2.9-23.569,8.388-33.948c2.087-3.946,0.578-8.838-3.37-10.924
+				c-3.946-2.09-8.838-0.579-10.926,3.368C89.78,60.121,86.232,74.473,86.232,88.926
+				C86.232,137.961,126.124,177.853,175.158,177.853z" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div style="height: 150px; width: 150px;"
+                    class="col-3 border-color1 svg-after position-relative rounded-circle d-flex align-items-center justify-content-center">
+                    <svg fill="#5d5d5a" width="80px" height="80px" viewBox="0 0 15 15" id="fitness-centre"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path id="daec40ff-71f5-4432-9d75-dcba7b9c1b89"
+                            d="M14.5,7V8h-1v2h-1v1H11V8H4v3H2.5V10h-1V8H.5V7h1V5h1V4H4V7h7V4h1.5V5h1V7Z" />
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- get trained by section  -->
-    <section class="mb-5">
+    <section class="my-5">
         <div class="container-fluid container-lg">
-            <p class="text-color1 text-center h3 mb-4">Get Private Lessons From Instructor of Your Choice</p>
-            <div class="row justify-content-evenly">
-                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center"
-                    style="width: 24%;">
+            <p class="text-color1 text-center h3 mb-5">Get Personal Training By two Amazing Coaches</p>
+            <div class="row justify-content-center">
+                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center justify-content-center member rounded-1 me-5">
                     <img class="rounded-circle shadow-1-strong mb-3"
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
-                        style="width: 130px;" />
-                    <p class="h5 mb-3">Sarah Nova</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                    style="width: 130px;" />
+                        <p class="h5 mb-3">Traci Santiago</p>
+                    <p class="member-role d-inline-block shadow rounded-2">Fitness Coach</p>
                     <ul class="list-unstyled text-center">
-                        <li>5th Dan Karate</li>
+                        <li>BSC in Sport Science</li>
+                        <li>Qualified in Health and Nurtition</li>
+                        <li>Speacialised in devising strength and conditioning programs for combact athlete</li>
                     </ul>
                     <ul class="list-unstyled d-flex justify-content-evenly w-50">
                         <li><i class="bi bi-facebook h5"></i></li>
@@ -162,53 +290,15 @@
                         <li><i class="bi bi-linkedin h5"></i></li>
                     </ul>
                 </div>
-                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1"
-                    style="width: 25%;">
+                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center">
                     <img class="rounded-circle shadow-1-strong mb-3"
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-                        style="width: 130px;" />
-                    <p class="h5 mb-3">Mauricio Gomez</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Gym owner/Head martial art coach</p>
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                    style="width: 130px;" />
+                        <p class="h5 mb-3">Harpreet Kaur</p>
+                    <p class="member-role d-inline-block shadow rounded-2">Fitness coach</p>
                     <ul class="list-unstyled text-center">
-                        <li>Coaches in all martail art</li>
-                        <li>4th Dan BlackBelt Judo</li>
-                        <li>4th Dan BlackBelt Jiu-Jitsu</li>
-                        <li>1st Dan BlackBelt Karate</li>
-                        <li>Accredited Muay Thai Coach</li>
-                    </ul>
-                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
-                        <li><i class="bi bi-facebook h5"></i></li>
-                        <li><i class="bi bi-instagram h5"></i></li>
-                        <li><i class="bi bi-linkedin h5"></i></li>
-                    </ul>
-                </div>
-                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center"
-                    style="width: 24%;">
-                    <img class="rounded-circle shadow-1-strong mb-3"
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-                        style="width: 130px;" />
-                    <p class="h5 mb-3">Guy Vicotry</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
-                    <ul class="list-unstyled text-center">
-                        <li>1st Dan BlackBelt Judo</li>
-                        <li>2nd Dan BlackBelt Jiu-Jitsu</li>
-                    </ul>
-                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
-                        <li><i class="bi bi-facebook h5"></i></li>
-                        <li><i class="bi bi-instagram h5"></i></li>
-                        <li><i class="bi bi-linkedin h5"></i></li>
-                    </ul>
-                </div>
-                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member1 justify-content-center"
-                    style="width: 24%;">
-                    <img class="rounded-circle shadow-1-strong mb-3"
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
-                        style="width: 130px;" />
-                    <p class="h5 mb-3">Morris Davis</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
-                    <ul class="list-unstyled text-center">
-                        <li>Accredited Muay Thai Coach</li>
-                        <li>3rd Dan BlackBelt Karate</li>
+                        <li>BSC in Physiothreapy</li>
+                        <li>MSC in Sport Science</li>
                     </ul>
                     <ul class="list-unstyled d-flex justify-content-evenly w-50">
                         <li><i class="bi bi-facebook h5"></i></li>
@@ -220,20 +310,16 @@
         </div>
     </section>
 
-    <!-- available sessions info  -->
+    <!-- available info  -->
     <section class="">
         <div class="container-lg container-fluid">
             <div class="row align-items-center">
                 <div class="col-7 text-color1">
-                    <p class="" style="font-size: 70px;">$15/per hour</p>
-                    <p class="h2 mb-3">Available session</p>
-                    <p class="h5">Every Mon: 10:00-12:00</p>
-                    <p class="h5">Every Tue-Thu: 8:00-10:00|10:00-12:00 </p>
-                    <p class="h5">Every Fri: 10:00-12:00|19:00-21:00</p>
-                    <p class="h5">Every Sat-Sun: 8:00-10:00</p>
+                    <p class="" style="font-size: 70px;">$35/Per Hour</p>
+                    <p class="h2 mb-3">$6/Per Gym Room Use</p>
                 </div>
                 <div class="col-5">
-                    <p class="text-color4 w-75" style="font-size: 45px;">Book your favourite instructor now!</p>
+                    <p class="text-color4 w-75" style="font-size: 45px;">Book Your Session Now!</p>
                 </div>
             </div>
         </div>
@@ -255,19 +341,13 @@
                         <div class="text-color1 h5 mb-3 ">
                             <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                             <div class="invalid-feedback">
-                                Please enter the eamil!
+                                Please enter the email!
                             </div>
                         </div>
                         <div class="text-color1 h5 mb-3 ">
-                            <label for="" class="form-label">Select instructor</label>
-                            <select class="form-select" aria-label="Default select example" required>
-                                <option value="1">Mauricio Gomez</option>
-                                <option value="2">Sarah Nova</option>
-                                <option value="3">Guy Victory</option>
-                                <option value="4">Morris Davis</option>
-                              </select>
+                            <input type="number" class="form-control" id="hour" placeholder="Enter hours per week" required>
                             <div class="invalid-feedback">
-                                Please enter the instructor!
+                                Please enter number of hour!
                             </div>
                         </div>
                     </div>
@@ -312,15 +392,15 @@
                             <div class="col-6">
                                 <p class="h5 text-color1">Payment Summary</p>
                                 <div class="d-flex justify-content-between w-75">
-                                    <p class="text-color1">Private class fee per hour
+                                    <p class="text-color1">Self-defence Course
                                     </p>
-                                    <p class="text-color1" id="summary">: $15.00</p>
+                                    <p class="text-color1">: $ <span id="summary">35</span>.00</p>
                                 </div>
                                 <hr class="w-75">
                                 <div class="d-flex justify-content-between w-75">
                                     <p class="text-color1">Toal
                                     </p>
-                                    <p class="text-color1" id="total">: $15.00</p>
+                                    <p class="text-color1">: $<span id="total">35</span>.00</p>
                                 </div>
                             </div>
                         </div>
@@ -372,7 +452,7 @@
     </section>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./JS/privateClass.js"></script>
+    <script src="./JS/fitness.js"></script>
 </body>
 
 </html>

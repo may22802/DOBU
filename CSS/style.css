@@ -211,6 +211,15 @@ body{
     border:2px solid red;
 }
 
+.svg-after:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -180px;
+    width: 180px; /* Adjust width as needed */
+    border-bottom: 3px dashed #5d5d5a; /* Customize the color and width of the dashed line */
+}
+
 .hidden{
     display: none;
 }
