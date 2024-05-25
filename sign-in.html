@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in/Profile Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .profile-page{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav start -->
+    <nav class="navbar bg-nav sticky-top px-3">
+        <div class="container-fluid position-relative">
+            <a href="index.html"
+                class="navbar-brand position-absolute start-50 logo-font fs-1 d-none d-lg-inline text-nav">DOBU</a>
+            <a href="index.html" class="navbar-brand logo-font fs-1 d-inline d-lg-none text-nav me-0">DOBU</a>
+            <!-- from md to lg screen -->
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="index.html" class="nav-link text-nav">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="about.html" class="nav-link text-nav">About</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a href="membership.html" class="nav-link text-nav">Membership</a>
+                </li>
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle text-nav" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Programs
+                    </a>
+                    <ul class="dropdown-menu position-absolute top-100 border-0 bg-nav">
+                        <li><a class="dropdown-item text-nav" href="martialArtClass.html">Martial art classes</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="fitness.html">Fitness trainning</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="selfDefence.html">Self-defence</a></li>
+                        <li>
+                            <hr class="dropdown-divider text-nav">
+                        </li>
+                        <li><a class="dropdown-item text-nav" href="privateClass.html">Private classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row align-items-center d-none d-md-flex fs-5">
+                <li class="nav-item me-3">
+                    <a href="contact.html" class="btn-nav">Contact us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="sign-in.html" class="nav-link text-nav"><i class="bi bi-person-circle fs-2"></i></a>
+                </li>
+            </ul>
+
+            <!-- from sm to md screen -->
+            <a class="d-md-none" data-bs-toggle="offcanvas" href="#nav-offcanvas" role="button"
+                aria-controls="nav-offcanvas">
+                <span class="fs-1 text-dark"><i class="bi bi-list text-nav"></i></span>
+            </a>
+            <!-- offcanvas for nav  -->
+            <div class="offcanvas offcanvas-start bg-nav" tabindex="-1" id="nav-offcanvas"
+                aria-labelledby="nav-offcanvs-label" style="width: 280px;">
+                <!-- header  -->
+                <div class="offcanvas-header bg-nav">
+                    <p class="offcanvas-title logo-font fs-2 text-nav me-auto" id="nav-offcanvas-label">
+                        DOBU
+                    </p>
+                    <a type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="bi bi-x-lg text-nav fs-5"></i></a>
+                </div>
+                <!-- body  -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item mb-3">
+                            <a href="index.html" class="nav-link text-nav active-offcanvas">Home</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="about.html" class="nav-link text-nav">About</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="membership.html" class="nav-link text-nav">Membership</a>
+                        </li>
+                        <li class="nav-item dropdown mb-3">
+                            <a class="nav-link text-nav dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-nav">
+                                <li><a class="dropdown-item text-nav" href="martialArtClass.html">Martial art
+                                        classes</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="fitness.html">Fitness trainning</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="selfDefence.html">Self-defence</a></li>
+                                <li>
+                                    <hr class="dropdown-divider text-nav">
+                                </li>
+                                <li><a class="dropdown-item text-nav" href="privateClass.html">Private classes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="contact.html" class="nav-link text-nav">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="sign-in.html" class="nav-link text-nav">Sign-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--sign in section  -->
+
+    <div class="container-lg container-fluid mt-5 login-form" id="before">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-6">
+                <p class="h1 text-color1">Sign in to DOBU</p>
+                <p class="h4 text-color1">Welcome back! Please enter your details</p>
+                <form action="" class="w-50 needs-validation" novalidate id="loginForm">
+                    <div class="text-color1 h5 mb-3">
+                        <label for="loginUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" required>
+                        <div class="invalid-feedback">
+                            Please enter the name!
+                        </div>
+                    </div>
+                    <div class="text-color1 h5">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                            required>
+                            <div class="invalid-feedback" id="invalid-password">
+                                Please enter password!
+                            </div>
+                    </div>
+                    <div class="text-color1 h5 d-none">
+                        <input type="text" class="form-control" id="loginPhone" value="+959955665663"
+                            required>
+                    </div>
+                    <div class="text-color1 h5 d-none">
+                        <input type="email" class="form-control" id="loginEmail" value="may22802@gmail.com"
+                            required>
+                    </div>
+                    <div class="text-color1 mb-4">
+                        <input type="checkbox" id="showPasswordLogin" class="form-check-input">
+                        <label for="showPasswordLogin" class="form-check-label">Show Password</label>
+                    </div>
+                    <div class="">
+                        <button type="submit" class="btn-nav submit-btn-contact w-100">Sign in</button>
+                        <div class="d-flex">
+                            <hr class="w-50">
+                            <span>or</span>
+                            <hr class="w-50">
+                        </div>
+                        <a href="#" type="button" class="btn-nav submit-btn-contact w-100 text-center d-flex align-items-center justify-content-center"><span class="me-2"><i class="bi bi-google"></i></span> Sign in with
+                            Google</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-5">
+                <img src="./img/sign-in.jpg" alt="" class="img-fluid" style="height: 500px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- profile section -->
+    <div class="profile-page container-lg container-fluid" id="profilePage">
+        <div class="mt-3 mb-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-color1">Home</a></li>
+                    <li class="breadcrumb-item"><a href="sign-in.html" class="text-color1">Sign-in</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <p class="text-color1 h4">Profile Picture</p>
+            <div class="col-3">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                    style="width: 150px;" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <form id="profileForm" class="mb-4 w-75">
+                    <div class="text-color1 h5 mb-3">
+                        <label for="profileUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="profileUsername" required>
+                    </div>
+                    <div class="text-color1 h5 mb-3">
+                        <label for="profileEmail">Email</label>
+                        <input type="email" id="profileEmail" class="form-control"  required>
+                    </div>
+                    <div class="text-color1 h5 mb-3">
+                        <label for="profilePhone">Phone number</label>
+                        <input type="text" id="profilePhone" class="form-control" required>
+                    </div>
+                    <div class="text-color1 h5">
+                        <label for="profilePassword">Password:</label>
+                        <input type="password" id="profilePassword" class="form-control" required>
+                    </div>
+                    <div class="text-color1 mb-4">
+                        <input type="checkbox" id="showPassword" class="form-check-input">
+                        <label for="showPassword" class="form-check-label">Show Password</label>
+                    </div>
+                    <button type="button" id="saveChanges" class="btn btn-success" disabled>Save Changes</button>
+                    <button type="button" id="cancelChanges" class="btn btn-secondary" disabled>Cancel</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="text-color1 h5 mb-3 w-75">
+                    <label for="membership" class="form-label">Membership Plan</label>
+                    <input type="email" class="form-control" id="membership" value="Elite" disabled>
+                </div>
+                <div class="text-color1 mb-4">
+                    <p class="h5">Martial art classes</p>
+                    <div class="text-color1 d-flex justify-content-start checkbox-container">
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="me-5">
+                                <input class="form-check-input" type="checkbox" value="jiujitsu"
+                                    id="martialart1" checked disabled>
+                                <label class="form-check-label" for="martialart1">
+                                    Jiu-Jitsu
+                                </label>
+                            </div>
+                            <div class="">
+                                <input class="form-check-input" type="checkbox" value="judo" id="martialart2" checked disabled>
+                                <label class="form-check-label" for="martialart2">
+                                    Judo
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="me-5">
+                                <input class="form-check-input" type="checkbox" value="karate" id="martialart3" checked disabled>
+                                <label class="form-check-label" for="martialart3">
+                                    Karate
+                                </label>
+                            </div>
+                            <div class="">
+                                <input class="form-check-input" type="checkbox" value="muaythai"
+                                    id="martialart4" checked disabled>
+                                <label class="form-check-label" for="martialart4">
+                                    Muay Thai
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-color1 h5">
+                    If you want to change membership plan or take private class or want to change martail art, feel free to
+                        <a href="contact.html" class="text-color1">contact us <span><i class="bi bi-arrow-right-circle-fill"></i></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JS/sign-in.js"></script>
+</body>
+
+</html>
