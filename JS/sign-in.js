@@ -77,11 +77,6 @@ $(document).ready(function () {
         const newPassword = $('#profilePassword').val();
         const newEmail = $("#profileEmail").val();
         const newPhone = $("#profilePhone").val();
-        if ($('#profileForm')[0].checkValidity() === false) {
-            event.stopPropagation();
-            $('#profileForm').addClass('was-validated');
-            return;
-        }
 
         // For demonstration, we simply update the welcome message
         // In a real application, save the changes to the server here

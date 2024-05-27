@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        .profile-page{
+        .profile-page {
             display: none;
         }
     </style>
 </head>
+
 <body>
     <!-- nav start -->
     <nav class="navbar bg-nav sticky-top px-3">
@@ -129,14 +130,16 @@
     <!--sign in section  -->
 
     <div class="container-lg container-fluid mt-5 login-form" id="before">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-6">
+        <div
+            class="row align-items-center justify-content-center div-sign-in-form flex-row flex-md-column-reverse flex-xl-row">
+            <div class="col-12 col-md-8 col-xl-6">
                 <p class="h1 text-color1">Sign in to DOBU</p>
                 <p class="h4 text-color1">Welcome back! Please enter your details</p>
-                <form action="" class="w-50 needs-validation" novalidate id="loginForm">
+                <form action="" class="sign-in-form-width needs-validation" novalidate id="loginForm">
                     <div class="text-color1 h5 mb-3">
                         <label for="loginUsername" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" required>
+                        <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username"
+                            required>
                         <div class="invalid-feedback">
                             Please enter the name!
                         </div>
@@ -145,17 +148,15 @@
                         <label for="loginPassword" class="form-label">Password</label>
                         <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
                             required>
-                            <div class="invalid-feedback" id="invalid-password">
-                                Please enter password!
-                            </div>
+                        <div class="invalid-feedback" id="invalid-password">
+                            Please enter password!
+                        </div>
                     </div>
                     <div class="text-color1 h5 d-none">
-                        <input type="text" class="form-control" id="loginPhone" value="+959955665663"
-                            required>
+                        <input type="text" class="form-control" id="loginPhone" value="+959955665663" required>
                     </div>
                     <div class="text-color1 h5 d-none">
-                        <input type="email" class="form-control" id="loginEmail" value="may22802@gmail.com"
-                            required>
+                        <input type="email" class="form-control" id="loginEmail" value="may22802@gmail.com" required>
                     </div>
                     <div class="text-color1 mb-4">
                         <input type="checkbox" id="showPasswordLogin" class="form-check-input">
@@ -168,12 +169,14 @@
                             <span>or</span>
                             <hr class="w-50">
                         </div>
-                        <a href="#" type="button" class="btn-nav submit-btn-contact w-100 text-center d-flex align-items-center justify-content-center"><span class="me-2"><i class="bi bi-google"></i></span> Sign in with
+                        <a href="#" type="button"
+                            class="btn-nav submit-btn-contact w-100 text-center d-flex align-items-center justify-content-center"><span
+                                class="me-2"><i class="bi bi-google"></i></span> Sign in with
                             Google</a>
                     </div>
                 </form>
             </div>
-            <div class="col-5">
+            <div class="col-8 col-xl-5 d-none d-md-block text-center text-xl-start mb-5 mb-xl-0">
                 <img src="./img/sign-in.jpg" alt="" class="img-fluid" style="height: 500px;">
             </div>
         </div>
@@ -190,24 +193,24 @@
                 </ol>
             </nav>
         </div>
-        <div class="row">
-            <p class="text-color1 h4">Profile Picture</p>
-            <div class="col-3">
+        <div class="row mt-0 mt-md-5 mt-xl-0 justify-content-start justify-content-md-center justify-content-xl-start">
+            <p class="text-color1 h4 text-start text-md-center text-xl-start">Profile Picture</p>
+            <div class="col-3 text-start text-lg-center text-xl-start">
                 <img class="rounded-circle shadow-1-strong mb-4"
                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
                     style="width: 150px;" />
             </div>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <form id="profileForm" class="mb-4 w-75">
+        <div class="row justify-content-start justify-content-md-center justify-content-xl-start">
+            <div class="col-12 col-md-8 col-xl-6">
+                <form id="profileForm" class="mb-4 profile-width">
                     <div class="text-color1 h5 mb-3">
                         <label for="profileUsername" class="form-label">Username</label>
                         <input type="text" class="form-control" id="profileUsername" required>
                     </div>
                     <div class="text-color1 h5 mb-3">
                         <label for="profileEmail">Email</label>
-                        <input type="email" id="profileEmail" class="form-control"  required>
+                        <input type="email" id="profileEmail" class="form-control" required>
                     </div>
                     <div class="text-color1 h5 mb-3">
                         <label for="profilePhone">Phone number</label>
@@ -225,8 +228,8 @@
                     <button type="button" id="cancelChanges" class="btn btn-secondary" disabled>Cancel</button>
                 </form>
             </div>
-            <div class="col-6">
-                <div class="text-color1 h5 mb-3 w-75">
+            <div class="col-12 col-md-8 col-xl-6 mt-0 mt-md-3 mt-xl-0">
+                <div class="text-color1 h5 mb-3 profile-width">
                     <label for="membership" class="form-label">Membership Plan</label>
                     <input type="email" class="form-control" id="membership" value="Elite" disabled>
                 </div>
@@ -235,14 +238,15 @@
                     <div class="text-color1 d-flex justify-content-start checkbox-container">
                         <div class="d-flex flex-column align-items-start">
                             <div class="me-5">
-                                <input class="form-check-input" type="checkbox" value="jiujitsu"
-                                    id="martialart1" checked disabled>
+                                <input class="form-check-input" type="checkbox" value="jiujitsu" id="martialart1"
+                                    checked disabled>
                                 <label class="form-check-label" for="martialart1">
                                     Jiu-Jitsu
                                 </label>
                             </div>
                             <div class="">
-                                <input class="form-check-input" type="checkbox" value="judo" id="martialart2" checked disabled>
+                                <input class="form-check-input" type="checkbox" value="judo" id="martialart2" checked
+                                    disabled>
                                 <label class="form-check-label" for="martialart2">
                                     Judo
                                 </label>
@@ -250,14 +254,15 @@
                         </div>
                         <div class="d-flex flex-column align-items-start">
                             <div class="me-5">
-                                <input class="form-check-input" type="checkbox" value="karate" id="martialart3" checked disabled>
+                                <input class="form-check-input" type="checkbox" value="karate" id="martialart3" checked
+                                    disabled>
                                 <label class="form-check-label" for="martialart3">
                                     Karate
                                 </label>
                             </div>
                             <div class="">
-                                <input class="form-check-input" type="checkbox" value="muaythai"
-                                    id="martialart4" checked disabled>
+                                <input class="form-check-input" type="checkbox" value="muaythai" id="martialart4"
+                                    checked disabled>
                                 <label class="form-check-label" for="martialart4">
                                     Muay Thai
                                 </label>
@@ -266,8 +271,10 @@
                     </div>
                 </div>
                 <p class="text-color1 h5">
-                    If you want to change membership plan or take private class or want to change martail art, feel free to
-                        <a href="contact.html" class="text-color1">contact us <span><i class="bi bi-arrow-right-circle-fill"></i></span></a>
+                    If you want to change membership plan or take private class or want to change martail art, feel free
+                    to
+                    <a href="contact.html" class="text-color1">contact us <span><i
+                                class="bi bi-arrow-right-circle-fill"></i></span></a>
                 </p>
             </div>
         </div>

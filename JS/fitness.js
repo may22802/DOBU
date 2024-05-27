@@ -29,6 +29,6 @@
         
         // Update the content of other elements based on the number input value
         $('#summary').text(numberValue * 35 );
-        $('#total').text(numberValue * 35); // Example of updating with some calculation
+        $('#total').text(numberValue * 35); 
     });
 });

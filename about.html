@@ -122,26 +122,27 @@
     </nav>
 
     <!-- 1st section of about us who are we?  -->
-    <section class="my-5">
-        <div class="container-fluid container-lg">
-            <div class="row align-items-center">
-                <div class="col-6">
+    <section class="my-md-5 mt-4 mb-2">
+        <div class="container-fluid container-md">
+            <div class="row align-items-center justify-content-between justify-content-xl-start">
+                <div class="col-12 col-md-6 col-lg-5 col-xl-6 ms-0 ms-lg-5 ms-xl-0">
                     <p class="h1 text-color1">Who are we?</p>
                     <p class="text-color1">We specialize in teaching all ages and pride ourselves on having a family
                         atmosphere. We help our students become more confident so that they can take on any challenge
                         life presents. Our one of a kind curriculum teaches the importance of focus, discipline, and
                         respect while teaching fun and practical martial arts.</p>
-                    <p class="text-color1">We at DOBU Martial Arts Gym are dedicated to your success. Get started today
+                    <p class="text-color1 d-none d-lg-block">We at DOBU Martial Arts Gym are dedicated to your success.
+                        Get started today
                         with US! Request more information today to find out how you can
                         start training.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-5 d-none d-md-flex">
                     <div class="row align-items-center">
-                        <div class="col-6">
+                        <div class="col-12 col-xl-6">
                             <img src="./img/about3.jpg" alt="" class="d-block ms-auto border-color1 img-fluid"
                                 style="height: 400px; object-fit: cover; object-position: top;">
                         </div>
-                        <div class="col-6">
+                        <div class="d-none d-xl-flex col-6">
                             <div class="row">
                                 <div class="col-12 mb-3">
                                     <img src="./img/about1.jpg" alt="" class="d-block w-75 border-color1 img-fluid"
@@ -160,15 +161,19 @@
     </section>
 
     <!-- meet the team section  -->
-    <section class="my-5">
+    <section class="my-lg-5 my-2">
         <div class="container-fluid container-lg">
-            <div class="row justify-content-evenly">
+            <div class="row justify-content-center justify-content-xl-evenly">
+                <div class="d-xl-none d-block mb-3">
+                    <p class="h1 text-color1 text-center">Meet the team</p>
+                </div>
                 <div
-                    class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center">
+                    class="col-10 col-md-5 col-xl-3 mb-3 mb-xl-0 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center">
                     <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp
                         " alt="avatar" style="width: 130px;" />
                     <p class="h5 mb-3">Sarah Nova</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
+                    <p class="member-role d-inline-block shadow rounded-2 text-start text-lg-center text-xl-start">
+                        Assitant martial art coach</p>
                     <ul class="list-unstyled text-center">
                         <li>5th Dan Karate</li>
                     </ul>
@@ -178,11 +183,13 @@
                         <li><i class="bi bi-linkedin h5"></i></li>
                     </ul>
                 </div>
-                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member-head">
+                <div
+                    class="col-10 col-md-5 col-xl-3 ms-0 ms-md-3 ms-xl-0 mb-3 mb-xl-0 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member-head">
                     <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp
                     " alt="avatar" style="width: 130px;" />
                     <p class="h5 mb-3">Mauricio Gomez</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Gym owner/Head martial art coach</p>
+                    <p class="member-role d-inline-block shadow rounded-2 text-start text-lg-center text-xl-start">Gym
+                        owner/Head martial art coach</p>
                     <ul class="list-unstyled text-center">
                         <li>Coaches in all martail art</li>
                         <li>4th Dan BlackBelt Judo</li>
@@ -197,11 +204,12 @@
                     </ul>
                 </div>
                 <div
-                    class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center">
+                    class="col-10 col-md-5 col-xl-3 mb-3 mb-xl-0 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 justify-content-center">
                     <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp
                     " alt="avatar" style="width: 130px;" />
                     <p class="h5 mb-3">Guy Vicotry</p>
-                    <p class="member-role d-inline-block shadow rounded-2">Assitant martial art coach</p>
+                    <p class="member-role d-inline-block shadow rounded-2 text-start text-lg-center text-xl-start">
+                        Assitant martial art coach</p>
                     <ul class="list-unstyled text-center">
                         <li>1st Dan BlackBelt Judo</li>
                         <li>2nd Dan BlackBelt Jiu-Jitsu</li>
@@ -212,13 +220,9 @@
                         <li><i class="bi bi-linkedin h5"></i></li>
                     </ul>
                 </div>
-            </div>
-            <div style="margin-top: 100px; margin-bottom: 50px;">
-                <p class="h1 text-color1 text-center">Meet the team</p>
-            </div>
-            <div class="row justify-content-evenly">
+                <!-- for md screen  -->
                 <div
-                    class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member1 justify-content-center member-assistant">
+                    class="d-none d-md-flex col-md-5 d-xl-none ms-3 mb-3 mb-xl-0 pt-5 text-color4 flex-column align-items-center member rounded-1 member1 justify-content-center member-assistant">
                     <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp
                         " alt="avatar" style="width: 130px;" />
                     <p class="h5 mb-3">Morris Davis</p>
@@ -233,7 +237,30 @@
                         <li><i class="bi bi-linkedin h5"></i></li>
                     </ul>
                 </div>
-                <div class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1">
+            </div>
+            <div class="d-none d-xl-block" style="margin-top: 100px; margin-bottom: 50px;">
+                <p class="h1 text-color1 text-center">Meet the team</p>
+            </div>
+            <div class="row justify-content-center justify-content-xl-evenly">
+                <div
+                    class="col-10 d-md-none d-xl-flex col-xl-3 mb-3 mb-xl-0 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member1 justify-content-center member-assistant">
+                    <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp
+                        " alt="avatar" style="width: 130px;" />
+                    <p class="h5 mb-3">Morris Davis</p>
+                    <p class="member-role d-inline-block shadow rounded-2 text-start text-lg-center text-xl-start">
+                        Assitant martial art coach</p>
+                    <ul class="list-unstyled text-center">
+                        <li>Accredited Muay Thai Coach</li>
+                        <li>3rd Dan BlackBelt Karate</li>
+                    </ul>
+                    <ul class="list-unstyled d-flex justify-content-evenly w-50">
+                        <li><i class="bi bi-facebook h5"></i></li>
+                        <li><i class="bi bi-instagram h5"></i></li>
+                        <li><i class="bi bi-linkedin h5"></i></li>
+                    </ul>
+                </div>
+                <div
+                    class="col-10 col-md-5 col-xl-3 mb-3 mb-xl-0 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1">
                     <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp
                     " alt="avatar" style="width: 130px;" />
                     <p class="h5 mb-3">Traci Santiago</p>
@@ -250,7 +277,7 @@
                     </ul>
                 </div>
                 <div
-                    class="col-3 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member3 justify-content-center member-fitness">
+                    class="col-10 col-md-5 col-xl-3 ms-0 ms-md-3 ms-xl-0 mb-3 mb-xl-0 pt-5 text-color4 d-flex flex-column align-items-center member rounded-1 member3 justify-content-center member-fitness">
                     <img class="rounded-circle shadow-1-strong mb-3" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp
                     " alt="avatar" style="width: 130px;" />
                     <p class="h5 mb-3">Harpreet Kaur</p>
@@ -270,10 +297,10 @@
     </section>
 
     <!-- footer section  -->
-    <section class="bg-color1 pt-5" style="margin-top: 130px;">
+    <section class="bg-color1 pt-5 footer-about">
         <div class="container-fluid">
             <div class="row justify-content-start align-items-end">
-                <div class="col-4 ms-5">
+                <div class="col-10 col-md-5 col-xl-4 ms-5">
                     <p class="logo-font h1 text-nav">DOBU</p>
                     <p class="text-nav"> <span class="me-3"><i class="bi bi-pin-map-fill"></i></span>Lorem, ipsum
                         dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt.</p>
@@ -286,8 +313,8 @@
                         <li><i class="bi bi-linkedin h5 text-nav"></i></li>
                     </ul>
                 </div>
-                <div class="col-4">
-                    <ul class="list-unstyled text-end">
+                <div class="col-10 col-md-5 col-xl-4 ms-5 ms-lg-0">
+                    <ul class="list-unstyled text-start text-md-end">
                         <li class="h5 text-nav">Why Hesitate?</li>
                         <li class="h5 text-nav">Join Our Programs</li>
                         <li class=""><a class="text-nav" href="martialArtClass.html">martial art classes <span><i
@@ -304,6 +331,7 @@
                     <p class="text-center text-color2 mb-0 pb-2">CopyRights @ DOBU All Rights Reserved.</p>
                 </div>
             </div>
+        </div>
     </section>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
