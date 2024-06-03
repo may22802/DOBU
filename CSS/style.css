@@ -1,17 +1,28 @@
 @import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
     font-family: logoFont;
     src: url(../fonts/OrganicalPersonalUseBoldItalic-2O6xe.ttf);
 }
 
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root{
+    --color1 : #5d5d5a;
+    --color2 : #ffa45c;
+    --color3 : #ffcdab;
+    --color4 : #fff4e3;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat;
 }
 
 body {
@@ -24,67 +35,82 @@ body {
 }
 
 .bg-nav {
-    background-color: #5d5d5a;
+    background-color: var(--color1);
 }
 
 .text-nav {
-    color: #ffcdab;
+    color: var(--color3);
 }
 
 .text-nav:hover {
-    color: #ffa45c;
+    color: var(--color2);
 }
 
 .text-nav:active {
-    color: #ffa45c;
+    color: var(--color2);
 }
 
 .btn-nav {
-    background-color: #ffcdab;
-    border: 1px solid #ffcdab;
-    color: #5d5d5a;
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+    color: var(--color1);
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 10px;
 }
 
 .btn-nav:hover {
-    background-color: #ffa45c;
-    border: 1px solid #ffa45c;
-    color: #fff4e3;
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
+    color: var(--color4);
 }
 
 .dropdown-item:hover {
-    background-color: #5d5d5a;
-    color: #ffa45c;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.active-page{
+    color: var(--color2);
+    font-weight: bold;
+}
+
+.active-icon{
+    color: var(--color2);
+}
+
+.active-btn{
+    background-color: var(--color2);
+    border-color: var(--color2);
+    color: var(--color4);
 }
 
 .text-color1 {
-    color: #5d5d5a;
+    color: var(--color1);
 }
 
 .border-color1 {
-    border: 3px solid #5d5d5a;
+    border: 3px solid var(--color1);
 }
 
 .bg-color1 {
-    background-color: #5d5d5a;
+    background-color: var(--color1);
 }
 
 .text-color2 {
-    color: #ffa45c;
+    color: var(--color2);
 }
 
 .text-color3 {
-    color: #ffcdab;
+    color: var(--color3);
 }
 
 .text-color4 {
-    color: #fff4e3;
+    color: var(--color4);
 }
 
 .bg-color4 {
-    background-color: #fff4e3;
+    background-color: var(--color4);
 }
 
 .program-card1 {
@@ -109,13 +135,13 @@ body {
 .pricing-section-card {
     padding: 20px 40px;
     text-align: center;
-    border: 5px solid #ffcdab;
-    color: #5d5d5a;
+    border: 5px solid var(--color3);
+    color: var(--color1);
     border-radius: 4px;
 }
 
 .indicator {
-    background-color: #fff4e3 !important;
+    background-color: var(--color4) !important;
     width: 10px !important;
     height: 10px !important;
     border-radius: 50% !important;
@@ -150,9 +176,9 @@ body {
 }
 
 .member-role {
-    background-color: #5d5d5a;
-    color: #fff4e3;
-    border: 2px solid #5d5d5a;
+    background-color: var(--color1);
+    color: var(--color4);
+    border: 2px solid var(--color1);
     padding: 5px;
 }
 
@@ -204,21 +230,21 @@ body {
 /* contact us page */
 .contact {
     padding: 10px 20px;
-    background-color: #fff4e3;
-    color: #5d5d5a;
+    background-color: var(--color4);
+    color: var(--color1);
 }
 
 .contact-email {
     padding: 10px 20px;
-    background-color: #5d5d5a;
-    color: #fff4e3;
+    background-color: var(--color1);
+    color: var(--color4);
 }
 
 /* membership page  */
 
 .membership-card {
-    border: 2px solid #ffa45c;
-    color: #5d5d5a;
+    border: 2px solid var(--color2);
+    color: var(--color1);
     padding: 10px 20px;
     text-align: center;
     cursor: pointer;
@@ -226,7 +252,7 @@ body {
 
 .membership-popular {
     border: 2px solid #ff5c5c;
-    color: #5d5d5a;
+    color: var(--color1);
     padding: 10px 20px;
     text-align: center;
     margin-top: 0;
@@ -234,7 +260,7 @@ body {
 
 .membership-junior {
     border: 2px solid #5c82ff;
-    color: #5d5d5a;
+    color: var(--color1);
     padding: 10px 20px;
     text-align: center;
 }
@@ -268,7 +294,7 @@ body {
     right: -180px;
     width: 180px;
     /* Adjust width as needed */
-    border-bottom: 3px dashed #5d5d5a;
+    border-bottom: 3px dashed var(--color1);
     /* Customize the color and width of the dashed line */
 }
 
@@ -327,7 +353,7 @@ body {
 
     .fitness-pricing {
         font-size: 50px;
-        color: #fff4e3;
+        color: var(--color4);
     }
 
     .contact-intro-width {
